@@ -1,0 +1,18 @@
+            WEATHER APP algo2
+START
+
+1. Screen par bolo: "City ka naam likho"
+2. User se city ka naam lo
+3. Agar khaali hai (kuch nahi likha):
+       bolo "Kuch to likho!" aur step 1 par wapas jao
+4. API ko city ka naam bhejo aur jawab lo
+5. Agar internet/API mein dikkat hai:
+       bolo "Internet check karo" aur step 7 par jao
+6. Agar API bole "city nahi mili":
+       bolo "Invalid city, dobara try karo" aur step 1 par wapas jao
+7. Nahi to weather print karo
+8. User se poocho: "Aur city dekhni hai? (yes/no)"
+9. Agar yes: step 1 par jao
+   Agar no: bolo "Bye!" aur band karo
+
+END

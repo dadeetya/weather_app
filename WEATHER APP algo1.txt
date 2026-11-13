@@ -1,0 +1,7 @@
+          WEATHER APP algo1
+first will output the txt enter the city name 
+after entering the txt will request the weather data from any free api
+now will print the data of that city
+and will ask user if wants to quit or want to know more about any other city
+or if the user enters smthin gibrsh will show a error(invalid city)
+and will ask again to enter the city
