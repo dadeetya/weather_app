@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #e8f1fb; display: flex; justify-content: center; padding-top: 60px; }
+    .card { background: white; padding: 30px; border-radius: 14px; width: 320px; box-shadow: 0 4px 14px rgba(0,0,0,0.12); text-align: center; }
+    input { padding: 10px; width: 65%; border: 1px solid #ccc; border-radius: 8px; }
+    button { padding: 10px 14px; border: none; background: #2f80ed; color: white; border-radius: 8px; cursor: pointer; }
+    .temp { font-size: 48px; margin: 15px 0 5px; }
+    .error { color: #c0392b; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Weather App</h2>
+
+    <form method="POST">
+      <input type="text" name="city" placeholder="Enter city name">
+      <button type="submit">Search</button>
+    </form>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if data %}
+      <h3>{{ data.city }}, {{ data.country }}</h3>
+      <div class="temp">{{ data.temp }}°C</div>
+      <p>Humidity: {{ data.humidity }}%</p>
+      <p>Wind: {{ data.wind }} km/h</p>
+    {% endif %}
+  </div>
+</body>
+</html>
